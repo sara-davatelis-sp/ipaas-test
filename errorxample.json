@@ -1,0 +1,59 @@
+{
+  "error": "REST API service endpoint returned error result: status code = 403, reason phrase = FORBIDDEN",
+  "stacktrace": "com.snaplogic.snap.api.SnapDataException: REST API service endpoint returned error result: status code = 403\n\tat com.snaplogic.snap.api.rest.RestResponseProcessor.process(RestResponseProcessor.java:359)\n\tat com.snaplogic.snap.api.rest.RestRequestExecutor.execute(RestRequestExecutor.java:336)\n\tat com.snaplogic.snap.api.rest.RestRequestExecutor.executeOnce(RestRequestExecutor.java:270)\n\tat com.snaplogic.snap.api.rest.RestRequestExecutor.execute(RestRequestExecutor.java:185)\n\tat com.snaplogic.snap.api.rest.RestRequestExecutor.execute(RestRequestExecutor.java:168)\n\tat com.snaplogic.snaps.rest.Get.process(Get.java:119)\n\tat com.snaplogic.snap.api.ExecutionUtil.process(ExecutionUtil.java:106)\n\tat com.snaplogic.snap.api.ExecutionUtil.executeForDocument(ExecutionUtil.java:118)\n\tat com.snaplogic.snap.api.ExecutionUtil.execute(ExecutionUtil.java:81)\n\tat com.snaplogic.snap.api.SimpleSnap.execute(SimpleSnap.java:70)\n\tat com.snaplogic.cc.snap.common.SnapRunnableImpl.executeSnap(SnapRunnableImpl.java:768)\n\tat com.snaplogic.cc.snap.common.SnapRunnableImpl.execute(SnapRunnableImpl.java:550)\n\tat com.snaplogic.cc.snap.common.SnapRunnableImpl.doRun(SnapRunnableImpl.java:834)\n\tat com.snaplogic.cc.snap.common.SnapRunnableImpl.call(SnapRunnableImpl.java:400)\n\tat com.snaplogic.cc.snap.common.SnapRunnableImpl.call(SnapRunnableImpl.java:116)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+  "reason": "REST API service endpoint returned error result: status code = 403, reason phrase = FORBIDDEN, refer to the error_entity field in the error view document for more details",
+  "resolution": "Please check the values of Snap properties.",
+  "status_code": "error",
+  "headers": {
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "retry-after": "60",
+    "x-ratelimit-reset": "1591464382",
+    "x-frame-options": "DENY",
+    "connection": "keep-alive",
+    "set-cookie": "session=; Expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/",
+    "pragma": "no-cache",
+    "content-type": "application/json",
+    "x-ratelimit-limit": "12000",
+    "date": "Sat, 06 Jun 2020 17:25:21 GMT",
+    "last-modified": "2020-06-06 17:25:21.384609",
+    "x-ratelimit-remaining": "11999",
+    "content-length": "78",
+    "cache-control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0, max-age=0",
+    "server": "openresty/1.15.8.1",
+    "expires": "-1"
+  },
+  "error_entity": "{\n \"messages\": [\n \"Not authorized to view deliveries for this exam\"\n ]\n}\n",
+  "request_headers": [
+    {
+      "accept": "*/*"
+    }
+  ],
+  "statusCode": 403,
+  "snap_details": {
+    "label": "GET IIQ ENG Exam info from SEI",
+    "instance_id": "fc93e24d-e833-4d2a-a3fa-e2da5f34419e",
+    "class_id": "com-snaplogic-snaps-rest-get",
+    "build_tag": "snapsmrc542",
+    "views": {
+      "in": {
+        "input0": {
+          "count": 1
+        }
+      },
+      "out": {
+        "output0": {
+          "count": 0
+        }
+      },
+      "error": {
+        "error0": {
+          "count": 0
+        }
+      }
+    }
+  },
+  "original": {
+    "delivery": "f18b2653-abd6-4ab5-832f-a0919c118afc",
+    "exam": "4daa8120-aaa3-4f84-a285-e9041f2d7be0"
+  }
+}
